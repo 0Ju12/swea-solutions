@@ -50,6 +50,7 @@ CASES = [
     ("graph/1267_task_order_b.py", rep("3 2\n1 2 2 3\n"), [f"#{i} 1 2 3" for i in range(1, 11)]),
     ("graph/island_count_dfs.py", "1\n3 3\nLLW\nWWW\nWLL\n", ["#1 2"]),
     ("backtracking-dp-greedy/1952_swimming_pool_dp.py", "1\n10 40 100 300\n1 0 0 0 0 0 0 0 0 0 0 0\n", ["#1 10"]),
+    ("backtracking-dp-greedy/1952_swimming_pool_dp.py", "2\n10 40 30 300\n1 1 1 0 0 0 0 0 0 0 0 0\n10 40 100 50\n5 5 5 5 5 5 5 5 5 5 5 5\n", ["#1 30", "#2 50"]),
     ("backtracking-dp-greedy/2806_n_queen.py", "2\n4\n1\n", ["#1 2", "#2 1"]),
     ("backtracking-dp-greedy/3234_balance_a_backtracking.py", "2\n1\n5\n2\n1 1\n", ["#1 1", "#2 4"]),
     ("backtracking-dp-greedy/3234_balance_b_bitmask_memo.py", "2\n1\n5\n2\n1 1\n", ["#1 1", "#2 4"]),

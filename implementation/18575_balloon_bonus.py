@@ -4,8 +4,8 @@ for tc in range(1, T + 1):
     N = int(input())
     arr = [list(map(int, input().split())) for _ in range(N)]
 
-    max_score = 9999
-    min_score = 0
+    max_score = -float('inf')
+    min_score = float('inf')
 
     for i in range(N):
         for j in range(N):

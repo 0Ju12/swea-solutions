@@ -4,6 +4,7 @@ from math import factorial
 T = int(input())
 
 def dfs(count, left, right):
+    global visited
 
     if dp[visited][left] > 0:
         return dp[visited][left] 
@@ -21,7 +22,7 @@ def dfs(count, left, right):
             continue
 
         visited |= (1<<i)
-        dfs(count+1, left+weights[i], right)
+        case_count += dfs(count+1, left+weights[i], right)
         if left >= right+weights[i]:
             case_count += dfs(count+1, left, right+weights[i])
         visited ^= (1<<i)

@@ -22,7 +22,7 @@ for tc in range(1, T + 1):
         col = []
 
         for r in range(9):
-            col.append(sqd[r][c])
+            col.append(sdq[r][c])
 
         if len(set(col))!=9:
             answer = 0
